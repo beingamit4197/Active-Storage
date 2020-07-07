@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @drop.title %>
+</p>
+
+<p>
+  <strong>File:</strong>
+  <%= link_to 'view/download', @drop.file %>
+</p>
+
+<p>
+  <strong>Decription:</strong>
+  <%= @drop.decription %>
+</p>
+
+<%= link_to 'Edit', edit_drop_path(@drop) %> |
+<%= link_to 'Back', drops_path %>
